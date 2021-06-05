@@ -51,6 +51,7 @@ https://github.com/Windmost8/MS4-fullstackDjangoProject-mostaphaE/blob/5698f14f9
 * Heroku 
 * Fontawesome
 * Balsamiq
+* allauth (https://django-allauth.readthedocs.io/en/latest/installation.html)
 
 ## **Features**
 ---
