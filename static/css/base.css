@@ -1,0 +1,16 @@
+body {
+    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    background-color:aliceblue;
+}
+
+.just {
+    display:flex;
+    justify-content: center;
+}
+
+.searchF {
+    width:500px;
+}
