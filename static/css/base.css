@@ -31,6 +31,10 @@ footer {
     color:white;
 }
 
+.blueBorder {
+    border: solid blue 2px;
+}
+
 body {
     background: url('/media/running-on-beach-1.jpg') no-repeat center center fixed;
     background-color: aliceblue;
