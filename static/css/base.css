@@ -1,9 +1,5 @@
-html {
-    height: 100%;
-}
-
 footer {
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     height: 100px;
@@ -16,6 +12,11 @@ footer {
     justify-content: center;
 }
 
+.aCenter {
+    display:flex;
+    align-items: center;
+}
+
 .socialMediaFooter {
     padding: 0;
     margin: 0;
@@ -24,27 +25,37 @@ footer {
 .socialMediaLists {
     display: inline-block;
     padding: 10px 30px;
-    border-right:solid white 1px;
 }
 
-.iconColor {
-    color:white;
+.borderRight {
+    border-right:solid black 1px;
+}
+
+.borderleft {
+    border-left:solid black 1px;
+}
+
+.blackTxt {
+    color:black;
 }
 
 .blueBorder {
     border: solid blue 2px;
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    background: url('/media/running-on-beach-1.jpg') no-repeat center center fixed;
-    background-color: aliceblue;
+    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Lato';
 }
 
-/* from Bulma, used from code inst */
+/* from Bulma, taken from code inst*/
 .icon {
     align-items: center;
     display: inline-flex;
@@ -65,13 +76,20 @@ body {
     background: black;
     color: white;
     min-width: 260px;
-    border:solid blue 2px;
+    margin:5px;
+}
+
+.shop-now-button1 {
+    background: white;
+    color: black;
+    min-width: 260px;
+    border:solid black 1px;
+    margin:5px;
 }
 
 .btn-black {
     background: black;
     color: white;
-    border:solid blue 2px;
 }
 
 .shop-now-button:hover,
@@ -92,7 +110,21 @@ body {
     border: 1px solid black !important;
 }
 
-/* -------------------------------- Media Queries, taken from codeinst */
+.bg-black {
+    background: #000 !important;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+/* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -113,5 +145,16 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }

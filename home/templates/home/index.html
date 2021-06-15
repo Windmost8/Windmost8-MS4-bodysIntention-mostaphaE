@@ -2,21 +2,34 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container h-100">
-        <div class="row h-80">
-            <div class="col-7 col-md-3 my-auto">
-                <h1 class="display-4 logo-font iconColor">
-                    What is your body's intention?
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="" class="shop-now-button btn btn-ls rounded-0 text-uppercase py-3">Let's find out together...</a>
-                    </h4>
-                </div>
-            </div>    
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
         </div>
     </div>
 {% endblock %}
 
 {% block content %}
+<div class="container h-100">
+        <div class="row h-100">
+            <div class="col-7 col-md-6 my-auto">
+                <h1 class="display-4 logo-font text-black">
+                    Are you a member?
+                </h1>
+                <div class="my-5 aCenter">
+                    <h4>
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Yes, I am</a>
+                    </h4>
+                    <h4>
+                        <a href="{% url 'products' %}" class="shop-now-button1 btn btn-lg rounded-0 text-uppercase py-3">No, I am not</a>
+                    </h4>
+                </div>
+                <div class="my-5 aCenter">
+                    <h4>
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Continue without answering...</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
