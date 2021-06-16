@@ -2,32 +2,44 @@
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                browse
+                browse <i class="fas fa-caret-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item"><u>By Price</u></a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item "><u>By Rating</u></a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item "><u>By Category</u></a>
+                <a href="{% url 'products' %}" class="dropdown-item"><u>All Products</u></a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                browse <i class="fas fa-caret-down"></i>
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item"><u>By Price</u></a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item "><u>By Rating</u></a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item "><u>By Category</u></a>
+                <a href="{% url 'products' %}" class="dropdown-item"><u>All Products</u></a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                products
+                products <i class="fas fa-caret-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="products-link">
-                <a href="{% url 'products' %}" class="dropdown-item">all products</a>
-                <a href="{% url 'products' %}?category=doe" class="dropdown-item">doe</a>
-                <a href="{% url 'products' %}?category=yo" class="dropdown-item">yo</a>
-                <a href="{% url 'products' %}?category=sara" class="dropdown-item">sara</a>
-                <a href="{% url 'products' %}?category=boib" class="dropdown-item">boib</a>
+                <a href="{% url 'products' %}" class="dropdown-item"><u>all products</u></a>
+                <a href="{% url 'products' %}?category=doe" class="dropdown-item"><u>doe</u></a>
+                <a href="{% url 'products' %}?category=yo" class="dropdown-item"><u>yo</u></a>
+                <a href="{% url 'products' %}?category=sara" class="dropdown-item"><u>sara</u></a>
+                <a href="{% url 'products' %}?category=boib" class="dropdown-item"><u>boib</u></a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="community-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                community
+                community <i class="fas fa-caret-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="community-link">
                 
@@ -36,7 +48,7 @@
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                about us
+                about us <i class="fas fa-caret-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 

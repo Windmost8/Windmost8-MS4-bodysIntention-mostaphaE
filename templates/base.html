@@ -44,11 +44,10 @@
                         <h2 class="logo-font text-black my-0"><strong>The Body's</strong><br> I n t e n t i o n</h2>
                     </a>
                 </div>
-
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <form method="GET" action="{% url 'products' %}">
                         <div class="input-group w-100">
-                            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search">
+                            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
                             <div class="input-group-append">
                                 <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                     <span class="icon">
@@ -59,7 +58,6 @@
                         </div>
                     </form>
                 </div>
-
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item dropdown">
@@ -75,10 +73,10 @@
                                         <a href="" class="dropdown-item">Product Management</a>
                                     {% endif %}
                                     <a href="" class="dropdown-item">My Profile</a>
-                                    <a href="" class="dropdown-item">Logout</a>
+                                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                                 {% else %}
-                                    <a href="" class="dropdown-item">Register</a>
-                                    <a href="" class="dropdown-item">Login</a>
+                                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                                 {% endif %}
                             </div>
                         </li>
@@ -99,7 +97,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="row bg-white">
                 <nav class="navbar navbar-expand-lg navbar-light w-100">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -109,33 +106,12 @@
                     {% include 'includes/main-nav.html' %}
                 </nav>
             </div>
-        </header>
-        
-    
-        <footer class="jCenter">
-                <div id="bottomFooter" class="row bg-white pt-lg-2 d-none d-lg-flex"></div>
-                    <ul class="socialMediaFooter">
-                        <!--reason for seperate border classes is for sizing issues-->
-                        <li class="socialMediaLists">
-                            <h4 class="blackTxt">Want to Socialize?</h4>
-                        </li>
-                        <li class="socialMediaLists borderRight borderleft">
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook blackTxt" aria-hidden="true"></i></a>
-                        </li>
-                        <li class="socialMediaLists borderRight">
-                            <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram blackTxt" aria-hidden="true"></i></a>
-                        </li>
-                        <li class="socialMediaLists borderRight">
-                            <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p blackTxt" aria-hidden="true"></i></a>
-                        </li>
-                        <li class="socialMediaLists borderRight">
-                            <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter blackTxt" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                    {% include 'includes/main-socials.html' %}
-                </div>
-        </footer>
+            </header>
 
+            <footer class="jCenter">
+            {% include 'includes/main-socials.html' %}
+        </footer>
+    
         {% if messages %}
             <div class="message-container"></div>
         {% endif %}
